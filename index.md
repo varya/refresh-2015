@@ -67,11 +67,7 @@ style: |
     }
 ---
 
-# Сначала стайлгайд {#Cover}
-
-<div class="or">или</div>
-
-### как перейти на компонентный подход
+# Driving the Style Guide Driven Development {#Cover}
 
 <div class="main-logo__wrapper">
     <object class="main-logo" data="themes/sc5/images/logo.min.svg#white" type="image/svg+xml"></object>
@@ -83,13 +79,6 @@ style: |
 <style>
 #Cover h2 {
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-}
-#Cover .or {
-  color: white;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-  text-align: center;
-  font-size: 40px;
-  font-family: 'Gotham Rounded Medium',sans-serif;
 }
 #Cover h3 {
   color: white;
@@ -104,17 +93,17 @@ style: |
 }
 </style>
 
-## Варя Степанова
+## Varya Stepanova
 {: .varya }
 
 <div class="photo"></div>
 
-Разработчик интерфейсов<br/>
-[SC5 Online](http://sc5.io), Хельсинки<br/>
-[@toivonens](https://twitter.com/toivonens){: .twitter }
+Frontend developer at [SC5](http://sc5.io), Helsinki<br/>
+[@varya_en](https://twitter.com/varya_en){: .twitter }
 
-Долгоживущие проекты, библиотеки компонентов,<br/>
-**style-guide-driven development**
+* long-running projects
+* UI libraries
+* **style-guide-driven development**
 
 <style>
 .varya .photo {
@@ -170,7 +159,7 @@ About fly lady.
 
 </style>
 
-## Прогресс
+## Progress
 {: .shout .progress-chapter }
 
 <style>
@@ -183,23 +172,23 @@ About fly lady.
 }
 </style>
 
-## Проблема
+## Problem
 {: .shout }
 
-## Метод старой школы
+## Old school way
 {: .cycle }
 
 <div class="states">
 <div class="state state_left" markdown="1">
-макет
+mockup
 
 </div>
 <div class="state state_middle" markdown="1">
-вёрстка
+markup
 
 </div>
 <div class="state state_right">
-продукт
+product
 </div>
 </div>
 
@@ -265,24 +254,24 @@ About fly lady.
 }
 </style>
 
-## Процесс с потерями
-{: .dash-process .no-title }
+## Dash process
+{: .dash-process }
 
-### Должно быть так
-<div class="stage" style="width:175px">макет</div>
-<div class="stage" style="width:175px">вёрстка</div>
-<div class="stage">интеграция</div>
+### In your dreams
+<div class="stage" style="width:175px">mockup</div>
+<div class="stage" style="width:175px">markup</div>
+<div class="stage">integration</div>
 
 <div class="next reality" markdown="1">
-### Но нет :-)
-<div class="stage" style="width:300px;">макет</div>
-<div class="stage" style="margin-left: 50px">вёрстка</div>
+### In reality
+<div class="stage" style="width:300px;">mockup</div>
+<div class="stage" style="margin-left: 50px">markup</div>
 <div class="next">
-  <div class="stage stage_cross stage_invisible" style="position: absolute; left: 520px; top: 370px">вёрстка</div>
-  <div class="stage" style="margin-left: 500px;width:150px">макет</div>
-  <div class="stage" style="position: absolute; width: 175px;left: 855px;top: 11.65em;">вёрстка</div>
-
-...снова и снова!
+  <div class="stage stage_cross stage_invisible" style="position: absolute; left: 520px; top: 370px">markup</div>
+  <div class="stage" style="margin-left: 500px;width:150px">mockup</div>
+  <div class="stage" style="position: absolute; width: 175px;left: 855px;top: 11.65em;">markup</div>
+<br/>
+...over and over again
 
 </div>
 </div>
@@ -348,18 +337,18 @@ About fly lady.
 }
 </style>
 
-## Метод старой школы
+## Old school way
 {: .old-school }
 
 <div class="old-school-cont" markdown="1">
 
 <div class="cycle"></div>
 
-* Интерфейс неоднородный
-* Запутанный код
-* Маленькие изменения на самом деле большие
-* Занимает много времени
-* <b>Сложно поддерживать</b>
+* Inconsistent visual system
+* Inconsistent code (duplicate, unreasoned)
+* Version confusion
+* Time-consuming
+* <b>Unmaintainable</b>
 {: .list }
 
 </div>
@@ -424,7 +413,7 @@ About fly lady.
 }
 </style>
 
-## Решение
+## Solution
 {: .shout }
 
 ## Websites are systems
@@ -433,8 +422,9 @@ About fly lady.
 <div class="photo"></div>
 
 <!-- What we are actually developing -->
-> Сайты — это системы, а не страницы. И чем скорее мы перестанем считать их страницами, тем лучше.
-<figcaption>Анна Дебенхэм</figcaption>
+> Websites are systems rather than pages and as soon as we
+> stop perceiving them as that, the better.
+<figcaption>Anna Debenham</figcaption>
 
 <style>
 .anna {
@@ -464,17 +454,17 @@ About fly lady.
 }
 </style>
 
-## Модульный CSS
+## Modular CSS architecture
 
 * OOCSS
 * SMACSS
 * BEM
 * Atomic design
 
-или любое другое решение
+or any other modular solution
 {: .note }
 
-## Процесс разрабоки с модульным CSS
+## Modular CSS process
 {: .component-cycle }
 
 <div class="components">
@@ -594,7 +584,7 @@ About fly lady.
 
 </style>
 
-## Выход из зоны комфорта
+## Getting out of your comfort zone
 {: .challenge }
 
 <style>
@@ -607,15 +597,15 @@ About fly lady.
 
 </style>
 
-## Живой стайлгайд
+## Living Style Guides
 {: .living-styleguide }
 
-<b>Живой стайлгайд</b> — это сайт с документацией, на котором компоненты отрисованы при помощи того
-же CSS, что используется в рабочем проекте.
+A <b>living style guide</b> represents UI components of your website with exactly the same styles
+that you use across the project.
 
 <div class="example" markdown="1">
 
-Например,
+For example,
 
 * [Lonely Planet's Style Guide](http://rizzo.lonelyplanet.com/styleguide/design-elements/colours)
 * [A Pattern Apart](http://patterns.alistapart.com/)
@@ -634,13 +624,14 @@ About fly lady.
 }
 </style>
 
-## Разработка при помощи стайлгайда
+## Style-Guide-Driven Development
 
-Стайлгайд <s>можно</s> нужно вписать в процесс разработки.
+Style-Guide <s>can</s> must be an integral part of your development workflow.
 
-<b>Сначала стайлгайд</b>: разрабатываем и фиксим в живом стайлгайде, а потом переносим в продукт.
+<b>Style-Guide-Driven Development</b> is the practice of using the style guide as the focal point for all front-end UI
+development tasks.
 
-## Инструмент
+## The tool we missed
 {: .tool }
 
 [styleguide.sc5.io](http://styleguide.sc5.io)
@@ -652,26 +643,26 @@ About fly lady.
 }
 </style>
 
-## Легко сделать стайлгайд
+## Easy to start
 
 * `npm install sc5-styleguide`
 * CSS, SCSS, SASS, LESS
-* Совместимо с Gulp и Grunt
-* Живой стайлгайд
-* Документация в коде, KSS-синтаксис
-* Шаблоны (AngularJS директивы)
+* Gulp- / Grunt- integrated
+* Living style guide
+* Documentation in code, KSS-compatible
+* Templating (AngularJS directives)
 
-## Можно использовать для разработки
+## Use as development playground
 
-* Следит за изменениями и обновляется
-* Показывает переменные компонента
-* Показывает компоненты переменных
-* Быстрое редактирование
+* Watching and auto-refreshing
+* Related variables and styles
+* Variable-component mapping
+* Live editing
 
-## На большом проекте
+## For large project
 {: .shout }
 
-## Наш опыт: библиотека компонент
+## Hands-on experience: UI pattern library
 {: .cross-company }
 
 ![](pictures/cross.jpg)
@@ -682,16 +673,16 @@ About fly lady.
 }
 </style>
 
-## Визуальные юнит тесты
+## Visual unit tests
 {: .unit-tests }
 
-Было:<br/>
+Before:<br/>
 ![](pictures/gemini/chrome~ref_web.png)
 
-Стало:<br/>
+After:<br/>
 ![](pictures/gemini/chrome~current_web.png)
 
-Видно на тесте:<br/>
+Test reveals:<br/>
 ![](pictures/gemini/chrome~diff_web.png)
 {: .next }
 
@@ -703,14 +694,14 @@ margin-bottom: 25px;
 }
 </style>
 
-## Автоматизировано
+## Automating
 {: .automate }
 
-* `gulp test:visual:update` — обновляет базу скриншотов
-* `gulp test:visual` — сравнивает локальную копию с базой
+* `gulp test:visual:update` — makes canonical screenshots
+* `gulp test:visual` — compares local copy with the canon
 ![](pictures/gemini.png){: .test-pic }
 
-### Можно использовать для **continuous integration**!
+### Ready to use with **continuous integration**!
 
 <style>
 .automate>div {
@@ -728,18 +719,18 @@ margin-bottom: 25px;
 }
 </style>
 
-## Стайл гайд бибилиотеки блоков
+## UI library Style Guide
 {: .benefits }
 
-* Живая документация компонентов
-* Быстрое тестирование
-* Юнит тесты для интерфейса
-* Быстрая разработка новых страниц
-* {: .unit-4 } Консистентный дизайн
-* Улучшает понимание в команде
-* Хорошо для удаленной работы
-* {: .unit-2 } Делаем одно дело
-* {: .main } <b>Разработка "сначала стайлгайд"</b>
+* Living overview of UI
+* Quick manual testing
+* Unit tests for UI
+* Quick built-out of new pages
+* {: .unit-4 } Cross-company design consistency
+* Cross-team communication
+* Communication for remote teams
+* {: .unit-2 } Bridges the gap
+* {: .main } <b>"Style-guide-driven" mindset</b>
 
 <style>
 .benefits>div {
@@ -791,7 +782,7 @@ margin-bottom: 25px;
 }
 </style>
 
-## На маленьком проекте
+## For small project
 {: .shout .small-project }
 
 <style>
@@ -800,14 +791,14 @@ margin-bottom: 25px;
 }
 </style>
 
-## Стайлгайд странички кота
+## Style Guide for cat's homepage
 {: .own-styleguide }
 
-[bit.ly/small-styleguide](http://bit.ly/small-styleguide){: .article-link }
+[j.mp/styleguide-small](http://j.mp/styleguide-small){: .article-link }
 
-* Видно, чего не хватает
-* Всё надо переделать
-* Дальше будет только лучше
+* Clear what is missing
+* Everything is wrong
+* Future must be better
 
 <style>
 .own-styleguide>div .article-link {
@@ -821,19 +812,19 @@ margin-bottom: 25px;
 }
 </style>
 
-## Итак,
+## To sum up,
 {: .shout }
 
-## Изменения сознания
+## Mindset changes
 {: .mindset }
 
-###До
+###Before
 
-Какой CSS и JS нужен?
+What markup, CSS and JS I need?
 
-### После
-Какие модули нужны для этой страницы? Нужно ли сделать новые компоненты?<br/>
-**Новые компоненты разрабатываются в стайлгайде.**
+### After
+What modules is this page made of? Do I need to create new modules?<br/>
+**Future modules and pages start in style guide**.
 
 <style>
 .mindset h3 {
@@ -841,13 +832,13 @@ margin-bottom: 25px;
 }
 </style>
 
-## Спасибо!
+## Thank you!
 {: .thanks }
 
-Варя Степанова, SC5 Online<br/>
-[@toivonens](https://twitter.com/toivonens){: .twitter }
+Varya Stepanova, SC5 Online<br/>
+[@varya_en](https://twitter.com/varya_en){: .twitter }
 
-### [varya.me/func-2015](http://varya.me/func-2015/)
+### [varya.me/refresh-2015](http://varya.me/refresh-2015/)
 
 <style>
 .thanks h3 {
