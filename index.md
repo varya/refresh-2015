@@ -16,16 +16,16 @@ style: |
     }
 
     #Cover h2 {
-        margin:30px 0 0;
+        margin:80px 0 0;
         color:#FFF;
         text-align:center;
-        font-size:70px;
+        font-size:60px;
+        line-height: 1.5em;
         }
     #Cover p {
         margin:10px 0 0;
         text-align:center;
         color:#FFF;
-        font-style:italic;
         font-size:20px;
         }
         #Cover p a {
@@ -67,7 +67,7 @@ style: |
     }
 ---
 
-# Driving the Style Guide Driven Development {#Cover}
+# Driving the <b class="sgd">Style Guide Driven</b> Development {#Cover}
 
 <div class="main-logo__wrapper">
     <object class="main-logo" data="themes/sc5/images/logo.min.svg#white" type="image/svg+xml"></object>
@@ -77,6 +77,12 @@ style: |
 {: .credits }
 
 <style>
+
+.sgd {
+  white-space: nowrap;
+  font-size: 70px;
+}
+
 #Cover h2 {
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
@@ -103,7 +109,8 @@ Frontend developer at [SC5](http://sc5.io), Helsinki<br/>
 
 * long-running projects
 * UI libraries
-* **style-guide-driven development**
+* <b>style-guide-driven development</b>
+{: .custom-list }
 
 <style>
 .varya .photo {
@@ -138,6 +145,11 @@ Frontend developer at [SC5](http://sc5.io), Helsinki<br/>
   background-size: cover;
   margin-right: 0.25em;
   margin-bottom: -0.5em;
+}
+
+.varya .custom-list li {
+  line-height: 1.25em;
+  font-size: 0.85em;
 }
 </style>
 
@@ -267,9 +279,9 @@ product
 <div class="stage" style="width:300px;">mockup</div>
 <div class="stage" style="margin-left: 50px">markup</div>
 <div class="next">
-  <div class="stage stage_cross stage_invisible" style="position: absolute; left: 520px; top: 370px">markup</div>
+  <div class="stage stage_cross stage_invisible" style="position: absolute; left: 520px; top: 430px">markup</div>
   <div class="stage" style="margin-left: 500px;width:150px">mockup</div>
-  <div class="stage" style="position: absolute; width: 175px;left: 855px;top: 11.65em;">markup</div>
+  <div class="stage" style="position: absolute; width: 175px;left: 855px;top: 437px;">markup</div>
 <br/>
 ...over and over again
 
@@ -345,7 +357,7 @@ product
 <div class="cycle"></div>
 
 * Inconsistent visual system
-* Inconsistent code (duplicate, unreasoned)
+* Inconsistent code<br/>(duplicate, unreasoned)
 * Version confusion
 * Time-consuming
 * <b>Unmaintainable</b>
@@ -454,7 +466,7 @@ product
 }
 </style>
 
-## Modular CSS architecture
+## Modular CSS structure
 
 * OOCSS
 * SMACSS
@@ -662,12 +674,19 @@ development tasks.
 ## For large project
 {: .shout }
 
-## Hands-on experience: UI pattern library
+## Hands-on experience: <b class="lib">UI pattern library</b>
 {: .cross-company }
 
 ![](pictures/cross.jpg)
 
 <style>
+.cross-company h2 {
+  font-size: 45px;
+}
+.cross-company .lib {
+  font-size: 52px;
+  white-space: nowrap;
+}
 .cross-company>div {
   text-align: center;
 }
@@ -791,7 +810,7 @@ margin-bottom: 25px;
 }
 </style>
 
-## Style Guide for cat's homepage
+## Cat's homepage style guide
 {: .own-styleguide }
 
 [j.mp/styleguide-small](http://j.mp/styleguide-small){: .article-link }
@@ -801,6 +820,9 @@ margin-bottom: 25px;
 * Future must be better
 
 <style>
+.own-styleguide h2 {
+  font-size: 47px;
+}
 .own-styleguide>div .article-link {
   text-align: center;
 }
@@ -812,10 +834,10 @@ margin-bottom: 25px;
 }
 </style>
 
-## To sum up,
+## To sum up
 {: .shout }
 
-## Mindset changes
+## Mindset metamorphosis
 {: .mindset }
 
 ###Before
@@ -842,7 +864,7 @@ Varya Stepanova, SC5 Online<br/>
 
 <style>
 .thanks h3 {
-  font-size: 3em;
+  font-size: 85px;
 }
 .thanks .twitter
 {
